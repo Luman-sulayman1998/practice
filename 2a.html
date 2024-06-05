@@ -1,0 +1,329 @@
+<style>
+  .uber-button {
+    background-color: black;
+    color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.15s;
+  }
+  .uber-button :hover {
+    opacity: 0.9;
+  }
+  .uber-button :active {
+    opacity: 0.9;
+  }
+  .amazon-button {
+    background-color: rgb(255, 215, 20);
+    border: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: background-color 0.15s;
+  }
+  .amazon-button :hover {
+    background-color: rgb(245, 205, 3);
+  }
+  .github-button {
+    background-color: rgb(46, 164, 79);
+    color: white;
+    border: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: box-shadow 0.15s;
+  }
+  .github-button :hover {
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.15);
+  }
+  .get-started-button {
+    background-color: rgb(121, 82, 179);
+    color: white;
+    border: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.15;
+  }
+  .get-started-button :hover {
+    background-color: rgb(99, 60, 156);
+  }
+  .download-button {
+    background-color: rgb(108, 117, 125);
+    color: black;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 20px;
+    transition: background-color 0.15s;
+  }
+  .download-button :hover {
+    background-color: white;
+  }
+  .download-button :active {
+    background-color: white;
+  }
+  .apply-button {
+    background-color: rgb(10, 102, 194);
+    color: white;
+    border: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 8px;
+  }
+  .apply-button :hover {
+    background-color: rgb(2, 70, 138);
+  }
+  .save-button {
+    background-color: white;
+    color: rgb(10, 102, 194);
+    border-color: rgb(red, green, blue);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-width: 1px;
+    border-radius: 13px;
+    margin-right: 5px;
+    transition: ground-color 0.15, border-width 0.15s;
+    border-color: green;
+    margin-top: 10px;
+  }
+  .save-button:hover {
+    background-color: rgb(226, 240, 254);
+    border-width: 2px;
+  }
+  .back-button {
+    background-color: white;
+    color: rgb(0, 113, 133);
+    font-weight: 50px;
+    font-size: small;
+    border: none;
+  }
+  .nike-button {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: x-large;
+    border: none;
+    cursor: pointer;
+  }
+  .price-button {
+    background-color: white;
+    color: rgb(0, 118, 0);
+    font-weight: bold;
+    font-size: large;
+  }
+  .free-button {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    font-size: large;
+    font-weight: 400;
+  }
+  .add-button {
+    background-color: rgb(249, 217, 76);
+    color: black;
+    height: 40px;
+    width: 120px;
+    border-radius: 30px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  .buy-button {
+    background-color: rgb(255, 164, 28);
+    color: black;
+    height: 40px;
+    width: 120px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-weight: bold;
+    border: none;
+  }
+  .tweet-button {
+    background-color: green;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: larger;
+    cursor: pointer;
+    margin-left: 10px;
+    border: none;
+    font-stretch: expanded;
+    vertical-align: top;
+  }
+  .tweet-button:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  .subscribe-button {
+    background-color: rgb(216, 0, 0);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+    font-size: larger;
+    font-weight: 100px;
+    vertical-align: top;
+    border: none;
+    border-radius: 2px;
+    margin-left: 10px;
+    transition: opacity 0.15s;
+  }
+  .back-button {
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    margin-left: 20px;
+  }
+  .search-result {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 18px;
+  }
+  .next-button {
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    margin-left: 20px;
+  }
+  .stretch-button {
+    background-color: green;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: 20px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: padding-top 1s, padding-bottom 1s, padding-right 1s,
+      padding-left 1s;
+  }
+  .stetch-button :hover {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-right: 36px;
+    padding-left: 36px;
+  }
+  .shadow-button {
+    background-color: green;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: 20px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 3px, 3px, 5px rgba(0, 0, 0, 0.3);
+  }
+  .shadow-button :hover {
+    padding-top: 3px;
+    padding-left: 3px;
+    box-shadow: none;
+  }
+  .stretch-button {
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor: pointer;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    transition: padding 0.15s, margin 0.15s;
+  }
+  .stretch-button:hover {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+</style>
+
+<button class="uber-button">Request now</button>
+
+<button class="amazon-button">Add to Cart</button>
+
+<button class="github-button">Sign up</button>
+
+<button class="get-started-button">Get started</button>
+
+<button class="download-button">Download</button>
+
+<button class="apply-button">Apply on company website</button>
+
+<button class="save-button">Save</button>
+
+<a class="amazon-link" href="https://amazon.com"> Back to Amazon </a>
+
+<p class="nike-button">Nike Black Running Shoes</p>
+
+<p class="price-button">$39 - in stock</p>
+
+<p class="free-button">Free delivery tomorrow</p>
+
+<button class="add-button">Add to Cart</button>
+
+<button class="buy-button">Buy now</button>
+
+<button class="tweet-button">Tweet</button>
+
+<button class="subscribe-button">SUBSCRIBE</button>
+
+<button class="back-button">Back</button>
+<a class="search-result" href="htttps://google.com">1</a>
+<a class="search-result" href="htttps://google.com">2</a>
+<a class="search-result" href="htttps://google.com">3</a>
+<a class="search-result" href="htttps://google.com">4</a>
+<a class="search-result" href="htttps://google.com">5</a>
+<button class="next-button">Next</button>
+
+<button class="stretch-button">Stretch</button>
+
+<button class="stretch-button">Shadow</button>
+
+<button class="stretch-button">One</button>
+<button class="stretch-button">Two</button>
+<button class="stretch-button">Three</button>
